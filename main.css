@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Outfit:wght@400;700&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Outfit:wght@400;700&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
+
+:root {
+  --primaryDarkCyan: hsl(158, 36%, 37%);
+  --PrimaryCream: hsl(30, 38%, 92%);
+  --neutralVeryDarkBlue: hsl(212, 21%, 14%);
+  --neutralDarkGrayishBlue: hsl(228, 12%, 48%);
+  --neutralWhite: hsl(0, 0%, 100%);
+  --fontMontserrat: 'Montserrat', sans-serif;
+  --fontFraunces: font-family: 'Fraunces', serif;
+  --paragraph: 14px;
+  --dekstop: 1440px;
+  --mobile: 375px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
