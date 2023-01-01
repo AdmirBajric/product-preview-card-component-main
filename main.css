@@ -1,17 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Outfit:wght@400;700&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Outfit:wght@400;700&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Outfit:wght@400;700&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&family=Outfit:wght@400;700&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap");
 
 :root {
   --primaryDarkCyan: hsl(158, 36%, 37%);
+  --primaryHoverDarkCyan: hsl(158, 38%, 27%);
   --primaryCream: hsl(30, 38%, 92%);
   --neutralVeryDarkBlue: hsl(212, 21%, 14%);
   --neutralDarkGrayishBlue: hsl(228, 12%, 48%);
   --neutralWhite: hsl(0, 0%, 100%);
-  --fontMontserrat: 'Montserrat', sans-serif;
-  --fontFraunces: font-family: 'Fraunces', serif;
-  --paragraph: 14px;
-  --desktop: 1440px;
-  --mobile: 375px;
+  --fontMontserrat: "Montserrat", sans-serif;
+  --fontFraunces: "Fraunces", serif;
+  --paragraph: 0.875rem;
 }
 
 * {
@@ -21,62 +20,119 @@
 }
 
 body {
-    background-color: var(--primaryCream);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    font-family: var(--fontMontserrat);
+  background-color: var(--primaryCream);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.attribution {
+  width: 100%;
+  grid-row: 2;
+  grid-column: 1 / span 2;
+  align-self: center;
+  text-align: center;
+}
+
+.btn {
+  width: 100%;
+  background-color: var(--primaryDarkCyan);
+  padding: 0.75rem;
+  color: var(--neutralWhite);
+  font-family: var(--fontFraunces);
+  display: flex;
+  justify-content: center;
+  border: none;
+  border-radius: 0.625rem;
+  cursor: pointer;
+}
+
+.btn:active {
+  background-color: var(--primaryHoverDarkCyan);
 }
 
 #container {
-    width: 50%;
-    height: 60%;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr;
-    border-radius: 20px;
-    overflow: hidden;
-}
-
-#main {
   height: 100%;
-  padding: 40px;
+  padding: 1.875rem;
   background-color: var(--neutralWhite);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  border-end-end-radius: 0.9375rem;
+}
+
+.cartBtn {
+  width: 95%;
+}
+
+.cartBtn img {
+  color: var(--neutralWhite);
+  width: 0.9375rem;
+  height: 0.9375rem;
+  margin-right: 0.9375rem;
+  font-size: 1.25rem;
 }
 
 .header {
-  margin-top: 15px;
-  color: var(--primaryCream);
-  letter-spacing: 3px;
-  font-size: 18px;
+  color: var(--neutralDarkGrayishBlue);
+  text-transform: uppercase;
+  font-size: 1.125rem;
   font-weight: bold;
- 
-}
-
-.title {
-  font-size: 40px;
-  font-family: var(--fontFraunces);
-  font-weight: bold;
-
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0.3125rem;
 }
 
 .info {
+  font-family: var(--fontMontserrat);
   font-size: var(--paragraph);
-  line-height: 1.5;
+  line-height: 1.5rem;
+  color: var(--neutralDarkGrayishBlue);
+  margin-top: 0.625rem;
+}
+
+#main {
+  width: 37.5rem;
+  height: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 6.25rem;
+  border-radius: 0.9375rem;
+  overflow: hidden;
+}
+
+.new-price {
+  color: var(--primaryDarkCyan);
+  font-size: 1.875rem;
+  font-weight: 600;
+  font-family: var(--fontFraunces);
+}
+
+.old-price {
+  font-size: 1rem;
   color: var(--neutralDarkGrayishBlue);
 }
 
-#containerImg img {
-  width: 100%;
-  height: 100%;
+.prices {
+  width: 12rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.625rem 0 0.9375rem 0;
 }
 
-.btn img {
-  color: aqua;
-  width: 20px;
-  height: 20px;
+picture img {
+  width: 100%;
+  height: 100%;
+  border-end-start-radius: 0.9375rem;
+}
+
+.sr-only {
+  display: none;
+}
+
+.title {
+  font-family: var(--fontFraunces);
+  font-weight: 700;
 }

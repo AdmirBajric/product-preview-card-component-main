@@ -1,0 +1,62 @@
+@media only screen and (max-width: 600px) {
+  .attribution {
+    margin-top: 1.25rem;
+  }
+
+  .btn {
+    padding: 1.25rem;
+    font-size: 1.125rem;
+  }
+
+  .cartBtn {
+    width: 100%;
+  }
+
+  #main {
+    max-width: 27.5rem;
+    display: flex;
+    flex-direction: column;
+    margin: 1.25rem;
+  }
+
+  #container {
+    border-end-start-radius: 0.9375rem;
+  }
+
+  .cartBtn img {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.9375rem;
+  }
+
+  .info {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+  }
+
+  .title {
+    font-size: 2.4rem;
+    margin-bottom: 0.8rem;
+    margin-top: 0.55rem;
+  }
+
+  .prices {
+    width: 14rem;
+  }
+
+  .new-price {
+    font-size: 2.125rem;
+  }
+
+  .old-price {
+    font-size: 1.125rem;
+  }
+
+  picture {
+    height: 21.875rem;
+  }
+
+  picture img {
+    border-end-start-radius: 0rem;
+  }
+}
