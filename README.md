@@ -6,4 +6,4 @@
 
 QR code component.
 
-Technology used : HTML, CSS, GRID, Flex
+Technology used : HTML, CSS, GRID, FLEXBOX
