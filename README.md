@@ -4,6 +4,6 @@
 
 ### https://www.frontendmentor.io/
 
-QR code component.
+Product Preview Card Component Main
 
 Technology used : HTML, CSS, GRID, FLEXBOX
